@@ -5,7 +5,8 @@ import { bindActionCreators } from 'redux';
 import { actionCreators } from "./state/index";
 import CryptoExchange from './components/crypto-exchange/CryptoExchange';
 import FormsContainer from './components/forms/FormsContainer';
-
+import Orders from './components/ordersTable/Order';
+import CenterChart from './components/centerChart/CenterChart';
 function App() {
 
 
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-<FormsContainer/>
+<CenterChart/>
   </>
     );
 }
