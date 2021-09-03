@@ -1,10 +1,10 @@
 import './App.css';
-import { useSelector } from "react-redux"
+import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { bindActionCreators } from 'redux'
-import { actionCreators } from "./state/index"
-
-
+import { bindActionCreators } from 'redux';
+import { actionCreators } from "./state/index";
+import CryptoExchange from './components/crypto-exchange/CryptoExchange';
+import FormsContainer from './components/forms/FormsContainer';
 
 function App() {
 
@@ -16,7 +16,9 @@ function App() {
   const { updateOrders } = bindActionCreators(actionCreators, dispatch);
 
   return (
-"hi"
+    <>
+<FormsContainer/>
+  </>
     );
 }
 
