@@ -3,7 +3,7 @@ import orderReducer from './orderReducer';
 
 
 const reducers = combineReducers({
-    product: orderReducer
+    data: orderReducer
 })
 
 export default reducers
