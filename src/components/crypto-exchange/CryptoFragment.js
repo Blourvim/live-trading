@@ -19,7 +19,7 @@ const useStyles = makeStyles({
         color:'white',
         margin:'0',
         padding:'0',
-        textAlign:'start',
+        textAlign:'center',
         fontSize:'0.7rem',
         textTransform: 'uppercase',
     },
@@ -27,7 +27,7 @@ const useStyles = makeStyles({
       color:'white',
       margin:'0',
       padding:'0',
-      textAlign:'start',
+      textAlign:'center',
       fontSize:'0.7rem',
       textTransform: 'uppercase',
       fontWeight:'600',
@@ -44,6 +44,10 @@ const useStyles = makeStyles({
       textAlign:'start',
       fontSize:'0.7rem',
       textTransform: 'uppercase',
+    },
+    end:{
+right:'-6px' ,
+position:'relative'   
     }
    
   });
@@ -116,8 +120,9 @@ return(
 
         </Grid>
         <Grid item xs={4}>
+          <div className={classes.end}>
 <p className={glow ?  classes.glowText: classes.text}>{ data ? data.data.price :"waiting..."}</p>
-
+</div>
         </Grid>
         
 </Grid>
