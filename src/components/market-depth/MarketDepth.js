@@ -6,40 +6,34 @@ const useStyles = makeStyles({
 root:{
 background:'#292D38',
 color:'white',
-width:'400px',
+width:'100%',
+height:'200px'
 
-},
-legend:{
-background:'#121621',
-padding:'7px',
-color:'white',
-fontSize:'0.8em',
-height:'200px',
-justifyContent:'space-between',
-display:'block',
-},
-legendItem:{
-marginBottom:'5%'
-},
-center:{
-justifyContent:'space-between',
-display:'flex',
-fontSize:'0.8em',
-backgroundColor:'#121621',
-borderBottomStyle:'solid',
-borderBottomWidth:'1px',
-borderBottomColor:'#292D38',
-},
-titles:{
-display:'flex'
 },
 chart:{
     display:'flex',
-    height:'300px',
-    widht:'300px'
+    height:'200px',
+    width:'97%',
+    background:'#121621',
+    margin:'0 auto',
 
 },
+title:{
+  color:'#8C8F96',
+  fontSize:'0.7rem',
+  paddingLeft:'10px',
+  marginBottom:'4px'
+},
+subTitle:{
+  color:'white',
+  fontSize:'0.7rem',
+  paddingLeft:'10px',
 
+},
+titles:{
+paddingBottom:'5px'
+
+}
 
 })
 
@@ -84,7 +78,15 @@ const MarketDepth =()=>{
 
 
       return (
-        <div className={classes.container}>
+        <div className={classes.root}>
+          <div className={classes.titles}>
+          <span className={classes.title}>
+          Recent Trades
+            </span> 
+            <span className={classes.subTitle}>
+            Market Depth
+            </span>
+          </div>
     <div className={classes.chart}>
 <Column color={'green'}/>
 
