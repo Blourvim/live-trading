@@ -9,15 +9,13 @@ paddingBottom:'10px',
 borderBottomStyle:'solid',
 borderBottomWidth:'1px',
 borderBottomColor:'#292D38',
-fontSize:'0.7rem'
+fontSize:'0.7rem',
+paddingLeft:'10px',
 
 },
 background:{
     background:'#292D38',
 },
-header:{
-    fontWeight:'800'
-}
 
 })
 
@@ -28,7 +26,7 @@ const classes = useStyles()
 
 
 <div className={classes.root}>
-<header className={classes.header}>Market News</header>
+    <span style={{fontWeight:'700'}}>lorel lorem</span>
 <p>Lorem ipsum dolar sit amet consequeter requiem emperio dor serene</p>
 <div className={classes.background}>
 <span>01-20-200-19:42:22</span>

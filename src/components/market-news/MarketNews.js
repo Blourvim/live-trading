@@ -4,7 +4,15 @@ const useStyles= makeStyles({
 root:{
 
 
+},
+header:{
+    fontWeight:'700',
+    background:'#292D38',
+    color:'white',
+    fontSize:'0.7rem',
+    paddingLeft:'7px'
 }
+
 
 })
 
@@ -15,6 +23,8 @@ const classes = useStyles()
 
 
 <div className={classes.root}>
+<header className={classes.header}>Market News</header>
+
 <NewsBubble/>
 <NewsBubble/>
 

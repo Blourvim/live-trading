@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
     root: {
-      height:'22px',
+      height:'21px',
       backgroundColor:'#121621',
       borderBottomStyle:'solid',
       borderBottomWidth:'1px',
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
         margin:'0',
         padding:'0',
         textAlign:'center',
-        fontSize:'0.6rem',
+        fontSize:'0.56rem',
         textTransform: 'uppercase',
     },
     glowText:{
@@ -116,12 +116,12 @@ return(
  </p>
         </Grid>
         <Grid item xs={4} >
-<p className={glow ?  classes.glowText: classes.text}>{ data ? data.data.amount:"waiting..."}</p>
+<p className={glow ?  classes.glowText: classes.text}>{ data ? data.data.amount:"None"}</p>
 
         </Grid>
         <Grid item xs={4}>
           <div className={classes.end}>
-<p className={glow ?  classes.glowText: classes.text}>{ data ? data.data.price :"waiting..."}</p>
+<p className={glow ?  classes.glowText: classes.text}>{ data ? data.data.price :"Yet"}</p>
 </div>
         </Grid>
         
