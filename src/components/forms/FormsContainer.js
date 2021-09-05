@@ -4,11 +4,10 @@ import {makeStyles} from '@material-ui/styles'
 import Container from '@material-ui/core/Container'
 const useStyles = makeStyles({
 container:{
-    border:'1px solid #333949',
     margin:'0px',
-    padding:'0',
+    paddingBottom:'15px',
     background:'#121621',
-    width:'80%'
+    width:'100%'
 },
 
     formContainer:{
@@ -16,17 +15,16 @@ container:{
         margin:'0px',
         padding:'0',
         background:'#121621',
-        height:'250px'
     },
     divider:{
-        height:'210px',
+        height:'200px',
         width:'2px',
         background:'#333949',
         border:'none',
         alignSelf:'center'
     },
     tabs:{
-        height:'25px',
+        height:'15px',
         background:'#121621',
         display:'flex',
     },
@@ -34,7 +32,9 @@ container:{
         border:'none',
         background:'#121621',
         color:'#5C5C61',
+        fontSize:'12px',
         marginRight:'20px',
+        marginBottom:'20px',
         '&:hover':{
             color:'white',
             cursor:'pointer'
@@ -70,6 +70,7 @@ return(<div className={classes.container}>
     </div>
 
 <Container className={classes.formContainer}>
+
 <BuyForm/>
 <div className={classes.divider}></div>
 <BuyForm/>

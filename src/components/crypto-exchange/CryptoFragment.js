@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
     root: {
-      height:'23px',
+      height:'22px',
       backgroundColor:'#121621',
       borderBottomStyle:'solid',
       borderBottomWidth:'1px',
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
         margin:'0',
         padding:'0',
         textAlign:'center',
-        fontSize:'0.7rem',
+        fontSize:'0.6rem',
         textTransform: 'uppercase',
     },
     glowText:{
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
       margin:'0',
       padding:'0',
       textAlign:'center',
-      fontSize:'0.7rem',
+      fontSize:'0.6rem',
       textTransform: 'uppercase',
       fontWeight:'600',
     },
@@ -42,7 +42,7 @@ const useStyles = makeStyles({
       margin:'0',
       padding:'0',
       textAlign:'start',
-      fontSize:'0.7rem',
+      fontSize:'0.6rem',
       textTransform: 'uppercase',
     },
     end:{
@@ -110,7 +110,7 @@ return(
 
     
     <Grid item xs={3}>
-<p className={glow ?  classes.glowText: classes.text}> 
+<p  className={glow ?  classes.glowText: classes.text} style={{marginLeft:'-20px'}} > 
  {props.exchange.substring(0,3)}
  /{props.exchange.substring(3,7)}
  </p>

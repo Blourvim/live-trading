@@ -5,7 +5,7 @@ const useStyles = makeStyles({
     container:{
         background:'#292D38',
         height:'200px',
-        width:'65%',
+        width:'100%',
     },
     buttonContainer:{
         display:'flex',

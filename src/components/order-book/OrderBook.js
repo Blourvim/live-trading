@@ -5,29 +5,30 @@ const useStyles = makeStyles({
 root:{
 background:'#292D38',
 color:'white',
-width:'400px',
+width:'100%',
+fontSize:'0.7em'
 },
 legend:{
 display:'flex',
 justifyContent:'space-between',
 background:'#121621',
-padding:'7px',
+padding:'6px',
 color:'#46566A',
-fontSize:'0.8em'
+fontSize:'0.7em'
 
 },
 center:{
 justifyContent:'space-between',
 display:'flex',
-fontSize:'0.8em',
+fontSize:'0.7em',
 backgroundColor:'#121621',
 borderBottomStyle:'solid',
 borderBottomWidth:'1px',
 borderBottomColor:'#292D38',
-
-
-
-
+},
+header:{
+    margin:'0px',
+    padding:'4px'
 }
     
 })
@@ -52,7 +53,6 @@ const OrderBook =()=>{
               };
               ws.onmessage = (data) => {
                 const response = JSON.parse(data.data);
-                console.log(response)
                 if(response.data.bids){
                     setData(response.data)
                 }
@@ -71,14 +71,16 @@ const OrderBook =()=>{
   
 return(
 <div className={classes.root}>
-    <h5>OrderBook</h5>
+    <p className={classes.header}>OrderBook</p>
     <legend className={classes.legend}>
 <span>Price(BTC)</span>
 <span>Amount(ETH)</span>
 <span>PMBB(ETH)</span>
     </legend>
 
-{data &&<OrderFragments type={"red"} data={data.asks}/>}
+{
+data &&<OrderFragments type={"red"} data={data.asks}/>
+}
 
     <div className={classes.center}>
 <span>Last Price <br/>1231312</span>
@@ -86,7 +88,8 @@ return(
 <span>Change<br/>1231312</span>
 
 </div>
-{data &&<OrderFragments type={"green"} data={data.bids}/>}
+{data &&<OrderFragments type={"green"} data={data.bids}/>
+}
 
 
     </div>

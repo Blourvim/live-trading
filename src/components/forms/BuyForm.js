@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     formContainer: {
         width: '50%',
         backgroundColor: '#121621',
-        height: '250px',
+        height: '130px',
         padding:'5px'
 
     },
@@ -19,21 +19,16 @@ const useStyles = makeStyles({
         color: "white",
         borderRadius: '3px',
         width: '98%',
-        height: '35px',
+        height: '25px',
         margin: 'px',
         fontSize: '0.8rem',
     },
 
-
-    flex:{
-height:'40px'
-    },
-  
     text: {
         color: 'white',
         margin:'0',
         padding:'0',
-        fontSize:'13px'
+        fontSize:'12px'
     },
     button: {
         color: 'white',
@@ -41,7 +36,7 @@ height:'40px'
         borderWidth: '0px',
         borderRadius: '5px',
         width: '3.5rem',
-        margin: '0 5px',
+        margin: '0 4px',
         '&:hover': {
             background: '#B9B9BB',
             cursor: 'pointer'
@@ -52,7 +47,7 @@ height:'40px'
         borderWidth: '0px',
         borderRadius: '5px',
         width: '100%',
-        height: '37px',
+        height: '30px',
         background: '#35DC83',
         marginTop:'10px',
         alignSelf:'center',
@@ -79,7 +74,8 @@ height:'40px'
         position:'relative',
         float:'right',
         marginRight:'18px',
-        marginTop:'-27px'
+        marginTop:'-26px',
+        fontSize:'0.9rem'
     }
 
 })

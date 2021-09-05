@@ -6,9 +6,9 @@ const CenterChart =()=>{
     
 
     return(
-        <>
-        <AdvancedChart widgetProps={{"theme": "dark"}} />;
-        </>
+        <div >
+        <AdvancedChart   widgetPropsAny={{"newProp": true}}/>
+        </div>
     )
 }
 

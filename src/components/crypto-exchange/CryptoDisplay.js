@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles= makeStyles({
 wrapper:{
-    width:'270px',
+    width:'100%',
     backgroundColor:'#121621',
 
 
@@ -31,7 +31,7 @@ legend:{
     paddingLeft:'7px',
     color:'#6A7584',
     justifyContent:'space-between',
-    fontSize:'0.9rem',
+    fontSize:'0.7rem',
  
 },
 search:{
@@ -42,10 +42,10 @@ form: {
     backgroundColor: '#292D38',
     color: "white",
     border:'none',
-    width: '253px',
-    height: '30px',
+    width: '98%',
+    height: '25px',
     margin: '5px auto',
-    fontSize: '0.8rem',
+    fontSize: '0.7rem',
 },
 
 
@@ -56,7 +56,7 @@ const classes= useStyles()
 return(
     <div className={classes.wrapper}>
 <div className={classes.search}>
-<input type="text" className={classes.form} placeholder="&#x1F50D;&nbsp;Search" />
+<input type="text" className={classes.form} placeholder="&emsp;&#x1F50D;&emsp;Search" />
 
 </div>
 
@@ -71,7 +71,7 @@ return(
     <span>NEO</span>
     <span>USDT</span>
     <span>DAI</span>
-    <span>PAX</span>
+    <span>PAX&emsp;</span>
 
 
 
@@ -79,9 +79,9 @@ return(
 
 
 <legend className={classes.legend}>
-<span>Pairs</span>
+<span >Pairs</span>
 <span>Amount</span>
-<span>Price</span>
+<span>Price&emsp;</span>
 
 </legend>
 

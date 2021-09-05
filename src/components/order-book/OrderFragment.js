@@ -2,8 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
 root:{
-    height:'23px',
-    width:'400px',
+    height:'20px',
+    width:'100%',
     backgroundColor:'#121621',
     borderBottomStyle:'solid',
     borderBottomWidth:'1px',
@@ -13,21 +13,18 @@ root:{
     color:'white',
 },
 green:{
-    height:'23px',
+    height:'20px',
 background:'#206447',
 },
 red:{
-    width:'50%',
-    height:'23px',
+    height:'20px',
 background:'#601E26',
 },
-numbers:{
-    top:'0'
-},
+
 numbersDiv:{
     position:'absolute',
     display:'flex',
-    width:'400px',
+    width:'220px',
     justifyContent:'space-between',
 
 }
