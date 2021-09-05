@@ -11,10 +11,7 @@ const CryptoExchange =()=>{
   const state = useSelector((state) => state.data);
   const dispatch = useDispatch();
   const { updateOrders } = bindActionCreators(actionCreators, dispatch);
-  const subscriptions =["btcusd"," btceur"," gbpusd"," ethusd"," xrpusd",
-  "gusdusd"," paxusd"," daiusd"," eurtusd", " usdcusdt",
-"usdceur"," usdcusd"," usdteur"," usdtusd"," audiousd",
-" crvusd"," kncusd"," yfiusd"]
+  const subscriptions =[ "btcusd", "btceur", "btcgbp", "gbpusd", "gbpeur", "eurusd", "ethusd", "etheur", "ethbtc", "ethgbp", "ethpax", "ethusdt", "ethusdc", "xrpusd", "xrpeur", "uniusd", "unieur"]
 return(
 <div>
 {subscriptions.map((item,index)=>{

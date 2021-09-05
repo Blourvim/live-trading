@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles= makeStyles({
 wrapper:{
     width:'270px',
+    backgroundColor:'#121621',
 
 
 },
@@ -30,9 +31,23 @@ legend:{
     paddingLeft:'7px',
     color:'#6A7584',
     justifyContent:'space-between',
-    fontSize:'0.9rem'
+    fontSize:'0.9rem',
+ 
+},
+search:{
+display:'flex',
+backgroundColor: '#121621',
+},
+form: {
+    backgroundColor: '#292D38',
+    color: "white",
+    border:'none',
+    width: '253px',
+    height: '30px',
+    margin: '5px auto',
+    fontSize: '0.8rem',
+},
 
-}
 
 })
 const CryptoDisplay =()=>{
@@ -40,6 +55,12 @@ const classes= useStyles()
 
 return(
     <div className={classes.wrapper}>
+<div className={classes.search}>
+<input type="text" className={classes.form} placeholder="&#x1F50D;&nbsp;Search" />
+
+</div>
+
+
     <div className={classes.picker}> 
 
     
