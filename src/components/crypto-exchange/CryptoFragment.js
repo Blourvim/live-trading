@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
     root: {
-      height:'26px',
+      height:'23px',
       backgroundColor:'#121621',
       borderBottomStyle:'solid',
       borderBottomWidth:'1px',
