@@ -84,7 +84,7 @@ const {isBuy,isMobile} = props
 
 
     return (
-        <Grid container style={{width: isMobile ? `100%`:'50%'}}className={classes.formContainer}>
+        <Grid container style={{width: !isMobile ? `100%`:'50%'}}className={classes.formContainer}>
             <Grid item xs={12} className={classes.flex}>
                 <input type="text" className={classes.form} placeholder="&nbsp;Price" />
                 <p className={classes.adornment}>BTC</p>
