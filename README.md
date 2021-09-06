@@ -8,3 +8,4 @@ https://blourvim.github.io/live-trading/
 * React
 * Material-UI
 * Trading-View-Embed-React
+* Bit-Stamp API
