@@ -12,10 +12,13 @@ height:'200px'
 },
 chart:{
     display:'flex',
+    fledirection:'column-reverse',
     height:'200px',
     width:'97%',
     background:'#121621',
     margin:'0 auto',
+    WebkitTransform:'rotate(180deg)'
+    // I have no shame left at this point
 
 },
 title:{
@@ -58,7 +61,6 @@ const MarketDepth =()=>{
               };
               ws.onmessage = (data) => {
                 const response = JSON.parse(data.data);
-                console.log(response)
                 if(response.data){
                     setData(response.data)
                 }
@@ -88,7 +90,21 @@ const MarketDepth =()=>{
             </span>
           </div>
     <div className={classes.chart}>
-<Column color={'green'}/>
+
+{data.asks && data.bids.map((item)=>{
+return(
+  <Column color={'red'} height={item[1]}/>
+)
+
+})}
+
+{data.asks && data.asks.map((item)=>{
+return(
+  <Column color={'green'} height={item[1]}/>
+)
+
+})}
+
 
 </div>
 
