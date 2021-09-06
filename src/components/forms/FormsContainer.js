@@ -71,7 +71,7 @@ return(<div className={classes.container}>
 
 <Container className={classes.formContainer}>
 
-<BuyForm/>
+<BuyForm isBuy={true}/>
 <div className={classes.divider}></div>
 <BuyForm/>
 

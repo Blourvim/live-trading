@@ -32,7 +32,7 @@ const useStyles = makeStyles({
     },
     button: {
         color: 'white',
-        backgroundColor: '#292D38',
+        background: '#292D38',
         borderWidth: '0px',
         borderRadius: '5px',
         width: '3.5rem',
@@ -81,8 +81,8 @@ const useStyles = makeStyles({
 })
 
 
-const BuyForm = () => {
-
+const BuyForm = (props) => {
+const {isBuy} = props
     const classes = useStyles()
 
 
@@ -128,7 +128,7 @@ const BuyForm = () => {
       
 
             <Grid item xs={12}>
-                <button className={classes.bigButton}>BUY</button>
+                <button style={{background:isBuy?"#35DC83":"#DC2226"}}className={classes.bigButton}>{isBuy ? "BUY":"SELL"}</button>
             </Grid>
 
         </Grid>
