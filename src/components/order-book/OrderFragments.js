@@ -5,7 +5,6 @@ import OrderFragment from './OrderFragment';
 const OrderFragments = (props)=>{
 
     const {data,type} = props
-    console.info(props)
 const slicedData = data.slice(0, 8)
     return(
 <>

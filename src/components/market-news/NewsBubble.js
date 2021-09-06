@@ -26,7 +26,7 @@ const classes = useStyles()
 
 
 <div className={classes.root}>
-    <span style={{fontWeight:'700'}}>lorel lorem</span>
+    <span style={{fontWeight:'700'}}>Lorem Ipsum</span>
 <p>Lorem ipsum dolar sit amet consequeter requiem emperio dor serene</p>
 <div className={classes.background}>
 <span>01-20-200-19:42:22</span>

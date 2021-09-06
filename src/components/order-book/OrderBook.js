@@ -83,9 +83,7 @@ data &&<OrderFragments type={"red"} data={data.asks}/>
 }
 
     <div className={classes.center}>
-<span>Last Price <br/>1231312</span>
-<span>USD<br/>1231312</span>
-<span>Change<br/>1231312</span>
+
 
 </div>
 {data &&<OrderFragments type={"green"} data={data.bids}/>

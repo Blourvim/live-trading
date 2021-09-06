@@ -7,7 +7,6 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
 
     formContainer: {
-        width: '50%',
         backgroundColor: '#121621',
         height: '130px',
         padding:'5px'
@@ -28,7 +27,7 @@ const useStyles = makeStyles({
         color: 'white',
         margin:'0',
         padding:'0',
-        fontSize:'12px'
+        fontSize:'1.4vh'
     },
     button: {
         color: 'white',
@@ -82,12 +81,12 @@ const useStyles = makeStyles({
 
 
 const BuyForm = (props) => {
-const {isBuy} = props
+const {isBuy,isMobile} = props
     const classes = useStyles()
 
 
     return (
-        <Grid container className={classes.formContainer}>
+        <Grid container style={{width: isMobile ? `100%`:'50%'}}className={classes.formContainer}>
             <Grid item xs={12} className={classes.flex}>
                 <input type="text" className={classes.form} placeholder="&nbsp;Price" />
                 <p className={classes.adornment}>BTC</p>
@@ -128,7 +127,7 @@ const {isBuy} = props
       
 
             <Grid item xs={12}>
-                <button style={{background:isBuy?"#35DC83":"#DC2226"}}className={classes.bigButton}>{isBuy ? "BUY":"SELL"}</button>
+                <button style={{background:isBuy?"#35DC83":"#DC2226",}}className={classes.bigButton}>{isBuy ? "BUY":"SELL"}</button>
             </Grid>
 
         </Grid>

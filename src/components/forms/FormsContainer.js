@@ -2,6 +2,7 @@
 import BuyForm from './BuyForm'
 import {makeStyles} from '@material-ui/styles'
 import Container from '@material-ui/core/Container'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 const useStyles = makeStyles({
 container:{
     margin:'0px',
@@ -24,7 +25,7 @@ container:{
         alignSelf:'center'
     },
     tabs:{
-        height:'15px',
+        height:'18px',
         background:'#121621',
         display:'flex',
     },
@@ -48,6 +49,7 @@ container:{
 const FormsContainer =()=>{
 
     const classes = useStyles()
+    const matches = useMediaQuery('(min-width:630px)');
 
 return(<div className={classes.container}>
     <div className={classes.tabs}>
@@ -71,9 +73,9 @@ return(<div className={classes.container}>
 
 <Container className={classes.formContainer}>
 
-<BuyForm isBuy={true}/>
-<div className={classes.divider}></div>
-<BuyForm/>
+<BuyForm isMobile={matches}isBuy={true}/>
+{matches &&<div className={classes.divider}></div>}
+{matches &&<BuyForm isMobile={matches}/>}
 
     </Container>
 </div>

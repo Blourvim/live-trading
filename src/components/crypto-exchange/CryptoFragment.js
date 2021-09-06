@@ -6,13 +6,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
     root: {
-      height:'21px',
       backgroundColor:'#121621',
       borderBottomStyle:'solid',
       borderBottomWidth:'1px',
       borderBottomColor:'#292D38',
       display:'flex',
-      padding:'0',
+      paddingTop:'5px',
       paddingLeft:'7px'
     },
     text:{
@@ -75,7 +74,6 @@ useEffect(
           };
           ws.onmessage = (event) => {
             const response = JSON.parse(event.data);
-            console.log(response)
             if(Object.entries(response.data).length !== 0){
               setData(response)
               setGlow(true)
