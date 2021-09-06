@@ -6,8 +6,10 @@ const useStyles = makeStyles({
 
     formContainer: {
         backgroundColor: '#121621',
-        height: '130px',
-        padding:'5px'
+        height: '170px',
+        padding:'5px',
+        paddingBottom:'15px'
+
 
     },
     form: {
@@ -34,6 +36,7 @@ const useStyles = makeStyles({
         borderRadius: '5px',
         width: '3.5rem',
         margin: '0 4px',
+        marginBottom:'20px',
         '&:hover': {
             background: '#B9B9BB',
             cursor: 'pointer'
@@ -84,7 +87,7 @@ const {isBuy,isMobile} = props
 
 
     return (
-        <Grid container style={{width: isMobile ? `100%`:'50%'}}className={classes.formContainer}>
+        <Grid container style={{width: !isMobile ? `100%`:'50%'}}className={classes.formContainer}>
             <Grid item xs={12} className={classes.flex}>
                 <input type="text" className={classes.form} placeholder="&nbsp;Price" />
                 <p className={classes.adornment}>BTC</p>
