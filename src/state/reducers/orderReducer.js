@@ -6,7 +6,6 @@ const reducer =(
     switch (action.type) {
         case "UPDATE_ORDERS":
             return ({...state, new:action.payload })
-            break;
         default:
             return state
     }

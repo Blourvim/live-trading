@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { ColorizeOutlined } from '@material-ui/icons';
 
 const useStyles = makeStyles({
 
