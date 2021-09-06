@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/live-trading/static/css/main.8f57f143.chunk.css",
-    "main.js": "/live-trading/static/js/main.f6fe0411.chunk.js",
-    "main.js.map": "/live-trading/static/js/main.f6fe0411.chunk.js.map",
+    "main.js": "/live-trading/static/js/main.33a0fc2b.chunk.js",
+    "main.js.map": "/live-trading/static/js/main.33a0fc2b.chunk.js.map",
     "runtime-main.js": "/live-trading/static/js/runtime-main.a88fef3e.js",
     "runtime-main.js.map": "/live-trading/static/js/runtime-main.a88fef3e.js.map",
     "static/js/2.6b7ff1be.chunk.js": "/live-trading/static/js/2.6b7ff1be.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a88fef3e.js",
     "static/js/2.6b7ff1be.chunk.js",
     "static/css/main.8f57f143.chunk.css",
-    "static/js/main.f6fe0411.chunk.js"
+    "static/js/main.33a0fc2b.chunk.js"
   ]
 }
