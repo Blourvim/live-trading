@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/blourvim.github.io/live-trading/static/css/main.8f57f143.chunk.css",
-    "main.js": "/blourvim.github.io/live-trading/static/js/main.f6fe0411.chunk.js",
-    "main.js.map": "/blourvim.github.io/live-trading/static/js/main.f6fe0411.chunk.js.map",
-    "runtime-main.js": "/blourvim.github.io/live-trading/static/js/runtime-main.a5c51d7d.js",
-    "runtime-main.js.map": "/blourvim.github.io/live-trading/static/js/runtime-main.a5c51d7d.js.map",
-    "static/js/2.6b7ff1be.chunk.js": "/blourvim.github.io/live-trading/static/js/2.6b7ff1be.chunk.js",
-    "static/js/2.6b7ff1be.chunk.js.map": "/blourvim.github.io/live-trading/static/js/2.6b7ff1be.chunk.js.map",
-    "static/js/3.698394b7.chunk.js": "/blourvim.github.io/live-trading/static/js/3.698394b7.chunk.js",
-    "static/js/3.698394b7.chunk.js.map": "/blourvim.github.io/live-trading/static/js/3.698394b7.chunk.js.map",
-    "index.html": "/blourvim.github.io/live-trading/index.html",
-    "static/css/main.8f57f143.chunk.css.map": "/blourvim.github.io/live-trading/static/css/main.8f57f143.chunk.css.map",
-    "static/js/2.6b7ff1be.chunk.js.LICENSE.txt": "/blourvim.github.io/live-trading/static/js/2.6b7ff1be.chunk.js.LICENSE.txt"
+    "main.css": "/live-trading/static/css/main.8f57f143.chunk.css",
+    "main.js": "/live-trading/static/js/main.f6fe0411.chunk.js",
+    "main.js.map": "/live-trading/static/js/main.f6fe0411.chunk.js.map",
+    "runtime-main.js": "/live-trading/static/js/runtime-main.a88fef3e.js",
+    "runtime-main.js.map": "/live-trading/static/js/runtime-main.a88fef3e.js.map",
+    "static/js/2.6b7ff1be.chunk.js": "/live-trading/static/js/2.6b7ff1be.chunk.js",
+    "static/js/2.6b7ff1be.chunk.js.map": "/live-trading/static/js/2.6b7ff1be.chunk.js.map",
+    "static/js/3.698394b7.chunk.js": "/live-trading/static/js/3.698394b7.chunk.js",
+    "static/js/3.698394b7.chunk.js.map": "/live-trading/static/js/3.698394b7.chunk.js.map",
+    "index.html": "/live-trading/index.html",
+    "static/css/main.8f57f143.chunk.css.map": "/live-trading/static/css/main.8f57f143.chunk.css.map",
+    "static/js/2.6b7ff1be.chunk.js.LICENSE.txt": "/live-trading/static/js/2.6b7ff1be.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a5c51d7d.js",
+    "static/js/runtime-main.a88fef3e.js",
     "static/js/2.6b7ff1be.chunk.js",
     "static/css/main.8f57f143.chunk.css",
     "static/js/main.f6fe0411.chunk.js"
